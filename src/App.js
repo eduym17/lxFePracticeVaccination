@@ -231,7 +231,7 @@ const App = () => (
                 before reporting to us:
               </p>
             </div>
-            <div className="grid grid-cols-2 grid-rows-2 w-3/4 gap-4 items-center justify-items-center pb-14">
+            <div className="grid grid-cols-2 grid-rows-2 w-[400px] gap-4 items-center justify-items-center pb-14">
               <div className="col-start-1 col-end-1 row-start-1 row-end-1 bg-white opacity-90 text-indigo-900 rounded-md w-full shadow-lg shadow-indigo-600">
                 <div className="flex flex-col justify-center items-center">
                   <div className="flex  items-center justify-center gap-3 pt-2">
@@ -289,8 +289,37 @@ const App = () => (
       </div>
     </main>
     <footer className="bg-indigo-700 text-white flex justify-center items-center">
-      <div className="w-3/4 bg-slate-800">
-        VACCINATION
+      <div className="w-3/4 flex justify-between pt-4">
+        <div>
+          <p className="font-extrabold text-xl pb-3">Vaccination</p>
+          <p className="font-light pb-6 w-3/5 text-left text-sm">Our goal is to help the world free from the ongoing pandemic</p>
+        </div>
+        <div className="flex gap-x-6">
+          <div>
+            <p className="font-extrabold text-sm pb-3">About</p>
+            <div className="font-light text-sm">
+              <p>About us</p>
+              <p>Features</p>
+              <p>News & Blog</p>
+            </div>
+          </div>
+          <div>
+            <p className="font-extrabold text-sm pb-3">Company</p>
+            <div className="font-light text-sm">
+              <p>How We Work?</p>
+              <p>Capital</p>
+              <p>Security</p>
+            </div>
+          </div>
+          <div>
+            <p className="font-extrabold text-sm pb-3">Support</p>
+            <div className="font-light text-sm">
+              <p>FAQs</p>
+              <p>Support Center</p>
+              <p>Contact Us</p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </>
