@@ -11,6 +11,11 @@ import Minimize from './assets/icons/minimize.png';
 import Shield from './assets/icons/shield.png';
 import Groups from './assets/icons/groups.png';
 import Immunity from './assets/icons/immunity.png';
+import Girl from './assets/images/girl-nobg.png';
+import Favorite from './assets/icons/favorite.png';
+import Avoid from './assets/icons/avoid.png';
+import Eat from './assets/icons/eat.png';
+import Check from './assets/icons/check.png';
 
 const App = () => (
   <>
@@ -54,7 +59,7 @@ const App = () => (
           </div>
         </div>
         <div className="relative">
-          <img src={Nurse} alt="nurse" className="max-h-[500px] min-w-[600px] justify-self-start rounded-t-lg" />
+          <img src={Nurse} alt="nurse" className="max-h-[500px] justify-self-start rounded-t-lg" />
           <div className="absolute bottom-8 -left-80">
             <div className="flex gap-2 items-center pb-3">
               <img src={Schedule} alt="star" />
@@ -90,7 +95,7 @@ const App = () => (
         </div>
       </div>
       <div className="bg-indigo-800">
-        <div className="flex justify-evenly py-14">
+        <div className="flex justify-center gap-28 py-14">
           <img src={Astrazeneca} alt="AstraZeneca" className="h-[70px]" />
           <img src={Pfizer} alt="Pfizer" className="h-[70px]" />
           <img src={Moderna} alt="Moderna" className="h-[70px]" />
@@ -144,9 +149,76 @@ const App = () => (
           </div>
         </div>
       </div>
+      <div className="bg-indigo-700 flex justify-center">
+        <div className="w-3/4 flex justify-center items-end">
+          <div>
+            <img src={Girl} alt="Nurse" className="max-h-[600px] min-w-[500px] self-end justify-self-start rounded-t-lg" />
+          </div>
+          <div className="w-2/3 min-w-[400px] flex flex-col">
+            <p className="font-bold text-4xl pb-6 pt-14">Preparation Before Vaccine</p>
+            <p className="font-light pb-6 w-3/4 self-start text-justify">
+              The success of vaccines is strongly influenced by the stregth of the body&apos;s
+              {' '}
+              immune system. Therefore, there are several things that can be tried to make
+              {' '}
+              the COVID-19 vaccine work:
+            </p>
+            <div className="pb-14 w-[300px] ml-10">
+              <div className="bg-white flex items-center justify-between text-indigo-800 p-2 my-3 rounded-md shadow-lg shadow-indigo-900">
+                <div className="flex items-center gap-2">
+                  <img src={Shield} alt="Shield" className="bg-indigo-700 p-1 rounded-sm h-6" />
+                  <p className="font-semibold">Avoid alcoholic beverages</p>
+                </div>
+                <div>
+                  <img src={Favorite} alt="Shield" className="bg-indigo-700 p-1 rounded-full h-5" />
+                </div>
+              </div>
+              <div className="bg-white flex items-center justify-between text-indigo-800 p-2 my-3 rounded-md shadow-lg shadow-indigo-900">
+                <div className="flex items-center gap-2">
+                  <img src={Avoid} alt="Shield" className="bg-indigo-700 p-1 rounded-sm h-6" />
+                  <p className="font-semibold">Avoid stress</p>
+                </div>
+                <div>
+                  <img src={Favorite} alt="Shield" className="bg-indigo-700 p-1 rounded-full h-5" />
+                </div>
+              </div>
+              <div className="bg-white flex items-center justify-between text-indigo-800 p-2 my-3 rounded-md shadow-lg shadow-indigo-900">
+                <div className="flex items-center gap-2">
+                  <img src={Eat} alt="Shield" className="bg-indigo-700 p-1 rounded-sm h-6" />
+                  <p className="font-semibold">Eat healthy food</p>
+                </div>
+                <div>
+                  <img src={Favorite} alt="Shield" className="bg-indigo-700 p-1 rounded-full h-5" />
+                </div>
+              </div>
+              <div className="bg-white flex items-center justify-between text-indigo-800 p-2 my-3 rounded-md shadow-lg shadow-indigo-900">
+                <div className="flex items-center gap-2">
+                  <img src={Check} alt="Shield" className="bg-indigo-700 p-1 rounded-sm h-6" />
+                  <p className="font-semibold">Get enough sleep</p>
+                </div>
+                <div>
+                  <img src={Favorite} alt="Shield" className="bg-indigo-700 p-1 rounded-full h-5" />
+                </div>
+              </div>
+              <div className="bg-white flex items-center justify-between text-indigo-800 p-2 my-3 rounded-md shadow-lg shadow-indigo-900">
+                <div className="flex items-center gap-2">
+                  <img src={Favorite} alt="Shield" className="bg-indigo-700 p-1 rounded-sm h-6" />
+                  <p className="font-semibold">Exercise or physycal activity</p>
+                </div>
+                <div>
+                  <img src={Favorite} alt="Shield" className="bg-indigo-700 p-1 rounded-full h-5" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-indigo-800">
+        algo
+      </div>
     </main>
     <footer>
-      asd
+      footer
     </footer>
   </>
 );
