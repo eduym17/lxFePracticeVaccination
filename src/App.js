@@ -16,6 +16,11 @@ import Favorite from './assets/icons/favorite.png';
 import Avoid from './assets/icons/avoid.png';
 import Eat from './assets/icons/eat.png';
 import Check from './assets/icons/check.png';
+import Man from './assets/images/man-left.png';
+import Call from './assets/icons/call.png';
+import Chat from './assets/icons/chat.png';
+import Message from './assets/icons/message.png';
+import Videocall from './assets/icons/video_call.png';
 
 const App = () => (
   <>
@@ -152,7 +157,7 @@ const App = () => (
       <div className="bg-indigo-700 flex justify-center">
         <div className="w-3/4 flex justify-center items-end">
           <div>
-            <img src={Girl} alt="Nurse" className="max-h-[600px] min-w-[500px] self-end justify-self-start rounded-t-lg" />
+            <img src={Girl} alt="Nurse" className="max-h-[600px] min-w-[500px] rounded-t-lg" />
           </div>
           <div className="w-2/3 min-w-[400px] flex flex-col">
             <p className="font-bold text-4xl pb-6 pt-14">Preparation Before Vaccine</p>
@@ -213,12 +218,80 @@ const App = () => (
           </div>
         </div>
       </div>
-      <div className="bg-indigo-800">
-        algo
+      <div className="bg-indigo-800 flex justify-center items-center">
+        <div className="w-3/4 flex justify-center items-end">
+          <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-4xl pb-6 pt-14">Emergency Contact</p>
+              <p className="font-light pb-6 w-3/4 text-justify">
+                Contact one of the contacts below if you or your family feel unwell and have
+                {' '}
+                similar symptoms such as COVID-19, make sure you also take care of yourself
+                {' '}
+                before reporting to us:
+              </p>
+            </div>
+            <div className="grid grid-cols-2 grid-rows-2 w-3/4 gap-4 items-center justify-items-center pb-14">
+              <div className="col-start-1 col-end-1 row-start-1 row-end-1 bg-white opacity-90 text-indigo-900 rounded-md w-full shadow-lg shadow-indigo-600">
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex  items-center justify-center gap-3 pt-2">
+                    <img src={Call} alt="Telephone" className="bg-indigo-700 p-1 rounded-md h-6" />
+                    <div>
+                      <p className="font-semibold">Call</p>
+                      <p className="font-light text-sm">021.123.145.14</p>
+                    </div>
+                  </div>
+                  <button type="submit" className="bg-indigo-700 px-4 py-1 my-4 justify-self-center rounded-md text-white w-4/5">Call Now</button>
+                </div>
+              </div>
+              <div className="col-start-2 col-end-2 row-start-1 row-end-1 bg-white opacity-90 text-indigo-900 rounded-md w-full shadow-lg shadow-indigo-600">
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex  items-center justify-center gap-3 pt-2">
+                    <img src={Chat} alt="Telephone" className="bg-indigo-700 p-1 rounded-md h-6" />
+                    <div>
+                      <p className="font-semibold">Chat</p>
+                      <p className="font-light text-sm">021.123.145.14</p>
+                    </div>
+                  </div>
+                  <button type="submit" className="bg-indigo-700 px-4 py-1 my-4 justify-self-center rounded-md text-white w-4/5">Chat now</button>
+                </div>
+              </div>
+              <div className="col-start-1 col-end-1 row-start-2 row-end-2 bg-white opacity-90 text-indigo-900 rounded-md w-full shadow-lg shadow-indigo-600">
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex  items-center justify-center gap-3 pt-2">
+                    <img src={Videocall} alt="Telephone" className="bg-indigo-700 p-1 rounded-md h-6" />
+                    <div>
+                      <p className="font-semibold">Video Call</p>
+                      <p className="font-light text-sm">021.123.145.14</p>
+                    </div>
+                  </div>
+                  <button type="submit" className="bg-indigo-700 px-4 py-1 my-4 justify-self-center rounded-md text-white w-4/5">Video Call Now</button>
+                </div>
+              </div>
+              <div className="col-start-2 col-end-2 row-start-2 row-end-2 bg-white opacity-90 text-indigo-900 rounded-md w-full shadow-lg shadow-indigo-600">
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex  items-center justify-center gap-3 pt-2">
+                    <img src={Message} alt="Telephone" className="bg-indigo-700 p-1 rounded-md h-6" />
+                    <div>
+                      <p className="font-semibold">Message</p>
+                      <p className="font-light text-sm">021.123.145.14</p>
+                    </div>
+                  </div>
+                  <button type="submit" className="bg-indigo-700 px-4 py-1 my-4 justify-self-center rounded-md text-white w-4/5">Message Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src={Man} alt="Man" className="max-h-[600px] min-w-[500px] self-end justify-self-start rounded-t-lg" />
+          </div>
+        </div>
       </div>
     </main>
-    <footer>
-      footer
+    <footer className="bg-indigo-700 text-white flex justify-center items-center">
+      <div className="w-3/4 bg-slate-800">
+        VACCINATION
+      </div>
     </footer>
   </>
 );
